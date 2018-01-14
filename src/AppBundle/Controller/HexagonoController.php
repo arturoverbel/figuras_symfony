@@ -48,7 +48,7 @@ class HexagonoController extends Controller
             $em->persist($hexagono);
             $em->flush();
 
-            return $this->redirectToRoute('hexagono_show', array('id' => $hexagono->getId()));
+            return $this->redirectToRoute('fig_show', array('id' => $hexagono->getId()));
         }
 
         return $this->render('hexagono/new.html.twig', array(
@@ -88,7 +88,7 @@ class HexagonoController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('hexagono_edit', array('id' => $hexagono->getId()));
+            return $this->redirectToRoute('fig_show', array('id' => $hexagono->getId()));
         }
 
         return $this->render('hexagono/edit.html.twig', array(
@@ -115,7 +115,7 @@ class HexagonoController extends Controller
             $em->flush();
         }
 
-        return $this->redirectToRoute('hexagono_index');
+        return $this->redirectToRoute('fig_index');
     }
 
     /**

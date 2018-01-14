@@ -48,7 +48,7 @@ class CuadradoController extends Controller
             $em->persist($cuadrado);
             $em->flush();
 
-            return $this->redirectToRoute('cuadrado_show', array('id' => $cuadrado->getId()));
+            return $this->redirectToRoute('fig_show', array('id' => $cuadrado->getId()));
         }
 
         return $this->render('cuadrado/new.html.twig', array(
@@ -88,7 +88,7 @@ class CuadradoController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('cuadrado_edit', array('id' => $cuadrado->getId()));
+            return $this->redirectToRoute('fig_show', array('id' => $cuadrado->getId()));
         }
 
         return $this->render('cuadrado/edit.html.twig', array(
@@ -115,7 +115,7 @@ class CuadradoController extends Controller
             $em->flush();
         }
 
-        return $this->redirectToRoute('cuadrado_index');
+        return $this->redirectToRoute('fig_index');
     }
 
     /**

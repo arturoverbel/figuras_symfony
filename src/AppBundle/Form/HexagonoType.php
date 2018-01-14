@@ -13,7 +13,7 @@ class HexagonoType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('radio')->add('numLados');
+        $builder->add('radio')->add('numLados',null, array('disabled' => true));
     }/**
      * {@inheritdoc}
      */

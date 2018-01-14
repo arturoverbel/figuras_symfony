@@ -13,7 +13,8 @@ class TrianguloType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('base')->add('altura')->add('hipotenusa')->add('numLados');
+        $builder->add('base')->add('altura')->add('hipotenusa')
+            ->add('numLados', null, array('disabled' => true));
     }/**
      * {@inheritdoc}
      */

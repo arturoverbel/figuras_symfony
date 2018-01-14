@@ -62,6 +62,6 @@ class Hexagono extends Fig
     }
 
     public function printr(){
-        return 'Radio: ' . $this->radio . ", Apotema: " . $this->getApotema();
+        return '(Radio, Apotema) : (' . $this->radio . ', ' . $this->getApotema() . ")";
     }
 }

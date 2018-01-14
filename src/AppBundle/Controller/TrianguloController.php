@@ -48,7 +48,7 @@ class TrianguloController extends Controller
             $em->persist($triangulo);
             $em->flush();
 
-            return $this->redirectToRoute('triangulo_show', array('id' => $triangulo->getId()));
+            return $this->redirectToRoute('fig_show', array('id' => $triangulo->getId()));
         }
 
         return $this->render('triangulo/new.html.twig', array(
@@ -88,7 +88,7 @@ class TrianguloController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('triangulo_edit', array('id' => $triangulo->getId()));
+            return $this->redirectToRoute('fig_show', array('id' => $triangulo->getId()));
         }
 
         return $this->render('triangulo/edit.html.twig', array(
@@ -115,7 +115,7 @@ class TrianguloController extends Controller
             $em->flush();
         }
 
-        return $this->redirectToRoute('triangulo_index');
+        return $this->redirectToRoute('fig_index');
     }
 
     /**

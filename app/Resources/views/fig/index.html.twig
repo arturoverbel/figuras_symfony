@@ -1,30 +1,31 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Figs list</h1>
+    <h1>Figuras</h1>
 
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Numlados</th>
-                <th>Actions</th>
+                <th>Número de lados</th>
+                <th>Información</th>
+                <th>Área</th>
+                <th>Perímetro</th>
+                <th>Workspace</th>
             </tr>
         </thead>
         <tbody>
         {% for fig in figs %}
             <tr>
-                <td><a href="{{ path('fig_show', { 'id': fig.id }) }}">{{ fig.id }}</a></td>
+                <td>{{ fig.id }}</td>
                 <td>{{ fig.numLados }}</td>
+                <td><a href="{{ path('fig_show', { 'id': fig.id }) }}">{{ fig.printr }}</a></td>
+                <td>{{ fig.area }}</td>
+                <td>{{ fig.perimetro }}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('fig_show', { 'id': fig.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('fig_edit', { 'id': fig.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    {% if fig.workspace is not null %}
+                        <a href="{{ path('workspace_show', { 'id': fig.workspace.id }) }}">{{ fig.workspace.id }}</a>
+                    {%  endif %}
                 </td>
             </tr>
         {% endfor %}
@@ -32,8 +33,15 @@
     </table>
 
     <ul>
+        <hr>
         <li>
-            <a href="{{ path('fig_new') }}">Create a new fig</a>
+            <a href="{{ path('cuadrado_new') }}">Crear un cuadrado</a>
+        </li>
+        <li>
+            <a href="{{ path('triangulo_new') }}">Crear un triángulo</a>
+        </li>
+        <li>
+            <a href="{{ path('hexagono_new') }}">Crear un hexágono</a>
         </li>
     </ul>
 {% endblock %}

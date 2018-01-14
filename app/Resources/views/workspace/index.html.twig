@@ -18,8 +18,8 @@
         <tbody>
         {% for workspace in workspaces %}
             <tr>
-                <td><a href="{{ path('workspace_show', { 'id': workspace.id }) }}">{{ workspace.id }}</a></td>
-                <td>{{ workspace.nombre }}</td>
+                <td>{{ workspace.id }}</td>
+                <td><a href="{{ path('workspace_show', { 'id': workspace.id }) }}">{{ workspace.nombre }}</a></td>
                 <td>{{ workspace.limiteFiguras }}</td>
                 <td>
                     <ul>
@@ -47,8 +47,12 @@
     </table>
 
     <ul>
+        <hr>
         <li>
-            <a href="{{ path('workspace_new') }}">Create a new workspace</a>
+            <a href="{{ path('workspace_new') }}">Crear un Workspace</a>
+        </li>
+        <li>
+            <a href="{{ path('fig_index') }}">Lista de figuras</a>
         </li>
     </ul>
 {% endblock %}

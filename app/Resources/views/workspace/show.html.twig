@@ -1,36 +1,65 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Workspace</h1>
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ workspace.id }}</td>
-            </tr>
-            <tr>
-                <th>Nombre</th>
-                <td>{{ workspace.nombre }}</td>
-            </tr>
-            <tr>
-                <th>Limitefiguras</th>
-                <td>{{ workspace.limiteFiguras }}</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('workspace_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('workspace_edit', { 'id': workspace.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        <h1>Workspace {{ workspace.nombre }}</h1>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Límite</th>
+                            <th>Area total</th>
+                            <th>Apotema total</th>
+                        </tr>
+                        <tr>
+                            <td>{{ workspace.id }}</td>
+                            <td>{{ workspace.nombre }}</td>
+                            <td>{{ workspace.limiteFiguras }}</td>
+                            <td>{{  workspace.areaTotal }}</td>
+                            <td>{{ workspace.apotemaTotal }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-8">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Número de lados</th>
+                        <th>Información</th>
+                        <th>Área</th>
+                        <th>Perímetro</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for fig in workspace.figuras %}
+                        <tr>
+                            <td><a href="{{ path('fig_show', { 'id': fig.id }) }}">{{ fig.id }}</a></td>
+                            <td>{{ fig.numLados }}</td>
+                            <td>{{ fig.printr }}</td>
+                            <td>{{ fig.area }}</td>
+                            <td>{{ fig.perimetro }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+        <a class="btn-success" href="{{ path('workspace_edit', { 'id': workspace.id }) }}">Editar</a>
+        {{ form_start(delete_form) }}
+            <input type="submit" value="Delete" class="btn-danger">
+        {{ form_end(delete_form) }}
+        <hr>
+        <a href="{{ path('workspace_index') }}">Workspaces</a>
+        <br>
+        <a href="{{ path('workspace_index') }}">Figuras</a>
+
 {% endblock %}

@@ -13,7 +13,7 @@ class CuadradoType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('lado')->add('numLados');
+        $builder->add('lado')->add('numLados',null, array('disabled' => true));
     }/**
      * {@inheritdoc}
      */
