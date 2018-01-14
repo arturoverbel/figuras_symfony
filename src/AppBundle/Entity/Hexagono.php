@@ -60,4 +60,8 @@ class Hexagono extends Fig
     {
         return $this->radio;
     }
+
+    public function printr(){
+        return 'Radio: ' . $this->radio . ", Apotema: " . $this->getApotema();
+    }
 }

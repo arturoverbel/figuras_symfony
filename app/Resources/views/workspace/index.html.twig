@@ -3,13 +3,16 @@
 {% block body %}
     <h1>Workspaces list</h1>
 
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Nombre</th>
-                <th>Limitefiguras</th>
-                <th>Actions</th>
+                <th>Límite</th>
+                <th>Figura</th>
+                <th>Area Total</th>
+                <th>Apotema total</th>
+                <th>#</th>
             </tr>
         </thead>
         <tbody>
@@ -20,13 +23,23 @@
                 <td>{{ workspace.limiteFiguras }}</td>
                 <td>
                     <ul>
+                        {% for figura in workspace.figuras %}
                         <li>
-                            <a href="{{ path('workspace_show', { 'id': workspace.id }) }}">show</a>
+                            <a href="{{ path('fig_show', { 'id': figura.id }) }}">
+                                Lados: {{ figura.numLados }}, {{  figura.printr }}
+                            </a>
                         </li>
-                        <li>
-                            <a href="{{ path('workspace_edit', { 'id': workspace.id }) }}">edit</a>
-                        </li>
+                        {%  endfor %}
                     </ul>
+                </td>
+                <td>
+                    {{ workspace.getAreaTotal }}
+                </td>
+                <td>
+                    {{ workspace.apotemaTotal }}
+                </td>
+                <td>
+                    <a href="{{ path('workspace_edit', { 'id': workspace.id }) }}">edit</a>
                 </td>
             </tr>
         {% endfor %}

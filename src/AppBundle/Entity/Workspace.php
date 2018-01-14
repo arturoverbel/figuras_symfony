@@ -146,7 +146,7 @@ class Workspace
     public function getAreaTotal(){
         $areas = 0;
         foreach ($this->figuras as $figura) {
-            $area += $figura->getArea();
+            $areas += $figura->getArea();
         }
         return $areas;
     }

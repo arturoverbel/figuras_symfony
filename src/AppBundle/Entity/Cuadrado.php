@@ -53,6 +53,10 @@ class Cuadrado extends Fig
     {
         return $this->lado;
     }
+
+    public function printr(){
+        return 'Lado: ' . $this->lado;
+    }
     
     
 }

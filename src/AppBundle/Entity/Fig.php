@@ -75,6 +75,7 @@ class Fig
     
     public function getArea(){ return 0; }
     public function getPerimetro(){ return 0; }
+    public function printr(){ return ''; }
     
 
     /**

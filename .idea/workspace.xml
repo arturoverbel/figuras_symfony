@@ -2,24 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1611c706-364f-4025-8595-319b015977ea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/workspace/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/workspace/edit.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/fig/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/fig/show.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/hexagono/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/hexagono/index.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/hexagono/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/hexagono/show.html.twig" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/workspace/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/workspace/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/workspace/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/workspace/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/workspace/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/workspace/show.html.twig" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/WorkspaceController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/WorkspaceController.php" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Cuadrado.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Cuadrado.php" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Fig.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Fig.php" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Hexagono.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Hexagono.php" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Triangulo.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Triangulo.php" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Workspace.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Workspace.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/WorkspaceType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/WorkspaceType.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/CuadradoRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/CuadradoRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/FigRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/FigRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/HexagonoRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/HexagonoRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TrianguloRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TrianguloRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/WorkspaceRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/WorkspaceRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/WorkspaceControllerTest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/WorkspaceControllerTest.php" />
-      <change beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,18 +25,75 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5232336">
+    <splitter split-orientation="horizontal" split-proportion="0.6002546">
       <split-first>
         <leaf>
-          <file leaf-file-name="WorkspaceController.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="WorkspaceController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/WorkspaceController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+                <state relative-caret-position="405">
+                  <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                   <folding>
                     <element signature="e#40#65#0#PHP" expanded="true" />
-                    <element signature="e#3093#3119#0#PHP" expanded="true" />
+                    <element signature="e#1987#2278#0#PHP" expanded="false" />
+                    <element signature="e#3196#3222#0#PHP" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Resources/views/workspace/index.html.twig">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+                  <folding>
+                    <element signature="e#12#26#0#Twig" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Resources/views/hexagono/show.html.twig">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#12#26#0#Twig" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Resources/views/fig/show.html.twig">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#12#26#0#Twig" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Fig.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Fig.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="453">
+                  <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -52,14 +102,54 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="WorkspaceType.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="WorkspaceType.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/WorkspaceType.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+                <state relative-caret-position="345">
+                  <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
                   <folding>
                     <element signature="e#34#59#0#PHP" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Cuadrado.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Cuadrado.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="423">
+                  <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Hexagono.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Hexagono.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Workspace.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Workspace.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="678">
+                  <caret line="152" column="4" lean-forward="false" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Triangulo.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Triangulo.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="720">
+                  <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -78,6 +168,16 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Form/FigType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/WorkspaceType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/WorkspaceController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Fig.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Cuadrado.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Triangulo.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Hexagono.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Workspace.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/workspace/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/hexagono/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/hexagono/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/fig/show.html.twig" />
       </list>
     </option>
   </component>
@@ -130,9 +230,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="width" value="1368" />
-    <option name="height" value="768" />
+    <option name="x" value="1535" />
+    <option name="width" value="1358" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -162,6 +262,48 @@
             <path>
               <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
               <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cuadrado" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hexagono" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -176,6 +318,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fig" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Fig" type="b2602c69:ProjectViewProjectNode" />
@@ -223,18 +372,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515954340774</updated>
-      <workItem from="1515954343310" duration="1492000" />
+      <workItem from="1515954343310" duration="4448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1492000" />
+    <option name="totallyTimeSpent" value="4448000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
+    <frame x="1365" y="0" width="1922" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22954546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16808964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -287,23 +436,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TrianguloController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/WorkspaceType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="345">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="e#34#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Cuadrado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Triangulo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Hexagono.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Workspace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="152" column="4" lean-forward="false" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FigController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Fig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/WorkspaceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+        <state relative-caret-position="405">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#40#65#0#PHP" expanded="true" />
-            <element signature="e#3093#3119#0#PHP" expanded="true" />
+            <element signature="e#1987#2278#0#PHP" expanded="false" />
+            <element signature="e#3196#3222#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/hexagono/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/workspace/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/hexagono/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/fig/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>

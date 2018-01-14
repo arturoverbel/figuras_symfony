@@ -97,8 +97,11 @@ class WorkspaceController extends Controller
 
             $em = $this->getDoctrine()->getManager();
 
-            foreach ($workspace->getFiguras() as $figura)
+            /** @var Fig $figura */
+            foreach ($workspace->getFiguras() as $figura) {
+                $figura->setWorkspace($workspace);
                 $em->persist($figura);
+            }
 
             $em->flush();
 

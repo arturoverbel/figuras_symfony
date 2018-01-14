@@ -52,6 +52,10 @@ class Triangulo extends Fig
         return $this->altura + $this->base + $this->hipotenusa;
     }
 
+    public function printr(){
+        return '(Base, Altura, Hipo) : (' . $this->base . ", " . $this->altura . ", " . $this->hipotenusa . ')';
+    }
+
     /**
      * Set base
      *
