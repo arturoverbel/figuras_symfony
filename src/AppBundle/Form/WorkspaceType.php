@@ -21,7 +21,8 @@ class WorkspaceType extends AbstractType
                 ->add('limiteFiguras')
                 ->add('figuras', EntityType::class, array(
                     'class' => Fig::class,
-                    'choice_label' => 'numLados',
+                    'required' => false,
+                    'choice_label' => 'whereis',
                     'multiple' => true
                 ))
         ;

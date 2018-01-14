@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -25,6 +26,7 @@ class Workspace
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="nombre", type="string", length=150)
      */
     private $nombre;
@@ -137,12 +139,7 @@ class Workspace
     {
         return $this->figuras;
     }
-    
-    public function isLleno(){
-        $total = count( $this->figuras );
-        return ($total >= $this->limiteFiguras ) ? true : false;
-    }
-    
+
     public function getAreaTotal(){
         $areas = 0;
         foreach ($this->figuras as $figura) {
@@ -160,5 +157,12 @@ class Workspace
         }
         return $apotemas;
     }
-    
+
+    /**
+     * @Assert\IsTrue(message="Excede el límite de figuras")
+     */
+    public function isLleno(){
+        return count( $this->getFiguras() ) <= $this->getLimiteFiguras();
+    }
+
 }

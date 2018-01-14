@@ -7,22 +7,28 @@
         <tbody>
             <tr>
                 <th>Id</th>
-                <td>{{ fig.id }}</td>
+                <th>Resumen</th>
+                <th>Numlados</th>
+                <th>Area</th>
+                <th>Perimetro</th>
             </tr>
             <tr>
-                <th>Numlados</th>
+                <td>{{ fig.id }}</td>
+                <td>{{ fig.printr }}</td>
                 <td>{{ fig.numLados }}</td>
+                <td>{{ fig.area }}</td>
+                <td>{{ fig.perimetro }}</td>
             </tr>
         </tbody>
     </table>
 
+    {{ form_start(delete_form) }}
+    <input type="submit" value="Delete">
+    {{ form_end(delete_form) }}
 
-            <a href="{{ path('fig_index') }}">Back to the list</a>
 
-
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+    <br><br>
+    <a href="{{ path('workspace_index') }}">Workspaces</a>
 
 
 {% endblock %}

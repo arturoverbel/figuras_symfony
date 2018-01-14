@@ -76,7 +76,12 @@ class Fig
     public function getArea(){ return 0; }
     public function getPerimetro(){ return 0; }
     public function printr(){ return ''; }
-    
+
+    public function whereis(){
+
+        $hasWorkspace = ( empty($this->getWorkspace()) ) ? '' : $this->getWorkspace()->getId() . '*';
+        return $hasWorkspace . "  |  " . $this->printr();
+    }
 
     /**
      * Set workspace

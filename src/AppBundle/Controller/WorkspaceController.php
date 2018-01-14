@@ -97,12 +97,24 @@ class WorkspaceController extends Controller
 
             $em = $this->getDoctrine()->getManager();
 
+            $oldfigs=$em->getRepository('AppBundle:Fig')->findby(array(
+                "workspace"=>$workspace
+            ));
+
+            /** @var Fig $oldfig */
+            foreach($oldfigs as $oldfig){
+                $oldfig->setWorkspace(null);
+                $em->persist($oldfig);
+            }
+
             /** @var Fig $figura */
             foreach ($workspace->getFiguras() as $figura) {
+
                 $figura->setWorkspace($workspace);
                 $em->persist($figura);
             }
 
+            $em->persist($workspace);
             $em->flush();
 
             return $this->redirectToRoute('workspace_edit', array('id' => $workspace->getId()));
