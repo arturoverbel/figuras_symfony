@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Figs list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Numlados</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for fig in figs %}
+            <tr>
+                <td><a href="{{ path('fig_show', { 'id': fig.id }) }}">{{ fig.id }}</a></td>
+                <td>{{ fig.numLados }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('fig_show', { 'id': fig.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('fig_edit', { 'id': fig.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('fig_new') }}">Create a new fig</a>
+        </li>
+    </ul>
+{% endblock %}

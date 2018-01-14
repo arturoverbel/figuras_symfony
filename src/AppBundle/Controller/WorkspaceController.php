@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Fig;
 use AppBundle\Entity\Workspace;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -45,6 +46,13 @@ class WorkspaceController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
+            /** @var Fig $figura */
+            foreach ($workspace->getFiguras() as $figura) {
+                $figura->setWorkspace($workspace);
+                $em->persist($figura);
+            }
+
             $em->persist($workspace);
             $em->flush();
 
@@ -86,7 +94,13 @@ class WorkspaceController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
+
+            $em = $this->getDoctrine()->getManager();
+
+            foreach ($workspace->getFiguras() as $figura)
+                $em->persist($figura);
+
+            $em->flush();
 
             return $this->redirectToRoute('workspace_edit', array('id' => $workspace->getId()));
         }

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Hexagonos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Radio</th>
+                <th>Id</th>
+                <th>Numlados</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for hexagono in hexagonos %}
+            <tr>
+                <td><a href="{{ path('hexagono_show', { 'id': hexagono.id }) }}">{{ hexagono.radio }}</a></td>
+                <td>{{ hexagono.id }}</td>
+                <td>{{ hexagono.numLados }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('hexagono_show', { 'id': hexagono.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('hexagono_edit', { 'id': hexagono.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('hexagono_new') }}">Create a new hexagono</a>
+        </li>
+    </ul>
+{% endblock %}

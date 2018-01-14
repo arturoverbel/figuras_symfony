@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Triangulos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Base</th>
+                <th>Altura</th>
+                <th>Hipotenusa</th>
+                <th>Id</th>
+                <th>Numlados</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for triangulo in triangulos %}
+            <tr>
+                <td><a href="{{ path('triangulo_show', { 'id': triangulo.id }) }}">{{ triangulo.base }}</a></td>
+                <td>{{ triangulo.altura }}</td>
+                <td>{{ triangulo.hipotenusa }}</td>
+                <td>{{ triangulo.id }}</td>
+                <td>{{ triangulo.numLados }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('triangulo_show', { 'id': triangulo.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('triangulo_edit', { 'id': triangulo.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('triangulo_new') }}">Create a new triangulo</a>
+        </li>
+    </ul>
+{% endblock %}

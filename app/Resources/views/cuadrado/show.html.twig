@@ -1,31 +1,31 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Workspace</h1>
+    <h1>Cuadrado</h1>
 
     <table>
         <tbody>
             <tr>
+                <th>Lado</th>
+                <td>{{ cuadrado.lado }}</td>
+            </tr>
+            <tr>
                 <th>Id</th>
-                <td>{{ workspace.id }}</td>
+                <td>{{ cuadrado.id }}</td>
             </tr>
             <tr>
-                <th>Nombre</th>
-                <td>{{ workspace.nombre }}</td>
-            </tr>
-            <tr>
-                <th>Limitefiguras</th>
-                <td>{{ workspace.limiteFiguras }}</td>
+                <th>Numlados</th>
+                <td>{{ cuadrado.numLados }}</td>
             </tr>
         </tbody>
     </table>
 
     <ul>
         <li>
-            <a href="{{ path('workspace_index') }}">Back to the list</a>
+            <a href="{{ path('cuadrado_index') }}">Back to the list</a>
         </li>
         <li>
-            <a href="{{ path('workspace_edit', { 'id': workspace.id }) }}">Edit</a>
+            <a href="{{ path('cuadrado_edit', { 'id': cuadrado.id }) }}">Edit</a>
         </li>
         <li>
             {{ form_start(delete_form) }}

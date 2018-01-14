@@ -2,36 +2,25 @@
 
 namespace AppBundle\Form;
 
-use AppBundle\Entity\Fig;
-use Doctrine\ORM\EntityRepository;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-
-class WorkspaceType extends AbstractType
+class CuadradoType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nombre')
-                ->add('limiteFiguras')
-                ->add('figuras', EntityType::class, array(
-                    'class' => Fig::class,
-                    'choice_label' => 'numLados',
-                    'multiple' => true
-                ))
-        ;
+        $builder->add('lado')->add('numLados');
     }/**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\Workspace'
+            'data_class' => 'AppBundle\Entity\Cuadrado'
         ));
     }
 
@@ -40,7 +29,7 @@ class WorkspaceType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'appbundle_workspace';
+        return 'appbundle_cuadrado';
     }
 
 
