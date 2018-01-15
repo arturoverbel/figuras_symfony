@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1611c706-364f-4025-8595-319b015977ea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/cuadrado/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/cuadrado/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/fig/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/fig/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/fig/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/fig/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/fig/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/fig/show.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/hexagono/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/hexagono/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/triangulo/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/triangulo/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/workspace/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/workspace/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/workspace/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/workspace/show.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CuadradoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CuadradoController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/HexagonoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/HexagonoController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TrianguloController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TrianguloController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Cuadrado.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Cuadrado.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Hexagono.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Hexagono.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/CuadradoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/CuadradoType.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/HexagonoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/HexagonoType.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/TrianguloType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/TrianguloType.php" />
-    </list>
+    <list default="true" id="1611c706-364f-4025-8595-319b015977ea" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -410,12 +391,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515954340774</updated>
-      <workItem from="1515954343310" duration="11333000" />
+      <workItem from="1515954343310" duration="11667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11333000" />
+    <option name="totallyTimeSpent" value="11667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="0" width="1922" height="1080" extended-state="6" />
